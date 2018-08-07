@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.cashier.controller.DashBoardController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="723.0" prefWidth="1100.0">
+         <children>
+            <AnchorPane fx:id="seconderyPane" layoutY="61.0" prefHeight="644.0" prefWidth="1100.0" />
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="194.0" layoutY="61.0" prefHeight="641.0" prefWidth="194.0" stylesheets="@../style/Theme.css">
+               <children>
+                  <VBox fx:id="vBox" prefHeight="641.0" prefWidth="184.0" style="-fx-background-color: #37474F;">
+                     <children>
+                        <JFXButton fx:id="btnCustomer" contentDisplay="TOP" onMouseClicked="#loadCustomer" prefHeight="92.0" prefWidth="194.0" styleClass="toolBar" text="Customer">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/man-user.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="btnOrder" contentDisplay="TOP" onMouseClicked="#loadOrder" prefHeight="92.0" prefWidth="194.0" styleClass="toolBar" text="Order">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/give-money.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton contentDisplay="TOP" prefHeight="92.0" prefWidth="194.0" styleClass="toolBar" text="Bake House">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/chef-cooking.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton contentDisplay="TOP" prefHeight="92.0" prefWidth="194.0" styleClass="toolBar" text="Meals">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/burger-and-soda-meal.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </JFXDrawer>
+            <AnchorPane prefHeight="61.0" prefWidth="1100.0" style="-fx-background-color: #37474F;">
+               <children>
+                  <JFXHamburger fx:id="hamburger" layoutX="31.0" layoutY="24.0" />
+                  <Label layoutX="480.0" layoutY="1.0" text="Mcdonald's Restaurants" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="61.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/MC-logo-for-other-.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label fx:id="lblExit" layoutX="1050.0" layoutY="19.0" styleClass="anyHover">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/red.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="exit" />
+                     </tooltip>
+                  </Label>
+                  <Label fx:id="lblLogout" layoutX="1026.0" layoutY="19.0" styleClass="anyHover">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="logout" />
+                     </tooltip>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

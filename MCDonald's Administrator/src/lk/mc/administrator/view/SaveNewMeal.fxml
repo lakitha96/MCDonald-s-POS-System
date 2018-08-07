@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" prefHeight="479.0" prefWidth="991.0" styleClass="root" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.SaveNewMealController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="470.0" prefWidth="680.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="157.0" fitWidth="811.0" layoutX="98.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true" styleClass="anyHover">
+               <viewport>
+                  <Rectangle2D height="103.0" width="522.0" />
+               </viewport>
+            </ImageView>
+            <Label layoutX="66.0" layoutY="194.0" text="Meal Name" />
+            <JFXTextField fx:id="txtName" layoutX="163.0" layoutY="190.0" />
+            <Label layoutX="400.0" layoutY="195.0" text="Description" />
+            <JFXTextField fx:id="txtDes" layoutX="478.0" layoutY="190.0" />
+            <Label layoutX="670.0" layoutY="275.0" text="Estimate Quantity" />
+            <JFXTextField fx:id="txtqtyAV" layoutX="779.0" layoutY="271.0" />
+            <Label layoutX="66.0" layoutY="268.0" text="Offer" />
+            <JFXTextField fx:id="txtOffer" layoutX="163.0" layoutY="263.0" text="no" />
+            <Label layoutX="371.0" layoutY="272.0" text="Offer expiry Date" />
+            <JFXTextField fx:id="txtExpieryDate" layoutX="484.0" layoutY="271.0" text="xxxx-xx-xx" />
+            <JFXButton fx:id="btnChooseImage" layoutX="382.0" layoutY="344.0" onMouseClicked="#chooseImage" styleClass="login-button" text="Choose Image" />
+            <Label fx:id="lblImageStatus" layoutX="547.0" layoutY="349.0" prefHeight="18.0" prefWidth="111.0" text="Label" />
+            <JFXButton fx:id="btnSave" layoutX="760.0" layoutY="398.0" onMouseClicked="#saveMeal" prefHeight="32.0" prefWidth="83.0" styleClass="login-button" text="SAVE" />
+            <JFXButton fx:id="btnCancel" layoutX="860.0" layoutY="398.0" prefHeight="32.0" prefWidth="76.0" styleClass="login-button" text="CANCEL" />
+            <Label layoutX="679.0" layoutY="194.0" text="Category" />
+            <JFXTextField fx:id="txtCat" layoutX="776.0" layoutY="190.0" />
+            <Label layoutX="66.0" layoutY="342.0" text="Price" />
+            <JFXTextField fx:id="txtPrice" layoutX="163.0" layoutY="337.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

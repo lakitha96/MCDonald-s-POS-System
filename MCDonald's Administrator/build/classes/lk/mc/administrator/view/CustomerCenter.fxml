@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" prefHeight="578.0" prefWidth="991.0" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.CustomerCenterController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="441.0" prefWidth="793.0" stylesheets="@../../../../../../MCDonald's%20Cashier/src/lk/mc/cashier/style/Theme.css">
+         <children>
+            <JFXButton fx:id="btnSave" layoutX="764.0" layoutY="330.0" onMouseClicked="#saveCustomer" prefHeight="26.0" prefWidth="61.0" text="Save">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <JFXTreeTableView fx:id="treeTable" layoutX="169.0" layoutY="371.0" prefHeight="136.0" prefWidth="698.0" />
+            <JFXTextField fx:id="txtCustomerName" labelFloat="true" layoutX="167.0" layoutY="330.0" promptText="Customer Name" />
+            <JFXTextField fx:id="txtSearch" layoutX="844.0" layoutY="18.0" onAction="#searchCustomer" prefHeight="25.0" prefWidth="107.0" promptText="Search" />
+            <JFXComboBox fx:id="cmbSearchCat" layoutX="714.0" layoutY="17.0" prefHeight="26.0" prefWidth="149.0" styleClass="TextFields" />
+            <JFXTextField fx:id="txtMobileNumber" labelFloat="true" layoutX="383.0" layoutY="330.0" promptText="Mobile Number" />
+            <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="601.0" layoutY="330.0" promptText="Address" />
+            <JFXButton fx:id="btnDelete" layoutX="891.0" layoutY="520.0" onMouseClicked="#deleteCustomer" text="Delete">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="btnUpdate" layoutX="819.0" layoutY="520.0" onMouseClicked="#updateCustomer" text="Edit">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <ImageView fitHeight="261.0" fitWidth="528.0" layoutX="255.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/DKR7F3aXcAA2dT-.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D height="650.0" width="1200.0" />
+               </viewport>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

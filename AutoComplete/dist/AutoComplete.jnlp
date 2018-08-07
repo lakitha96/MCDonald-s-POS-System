@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="AutoComplete.jnlp">
+  <information>
+    <title>AutoComplete</title>
+    <vendor>lakitha</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="AutoComplete.jar" size="3463" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\javafx-mx.jar" size="36037" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2383838" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="AutoComplete" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="autocomplete.AutoComplete"  name="AutoComplete" />
+  <update check="always"/>
+</jnlp>

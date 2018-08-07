@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="507.0" prefWidth="124.0" stylesheets="@../../../../../../../../MEGAsync%20Downloads/Cloud%20Drive/Projects/RMI/POS%20with%20FX/src/lk/ijse/pos/style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.mealcollection.controller.SlideBarController">
+   <children>
+      <JFXButton fx:id="btnSaveNewMeal" accessibleText="MB1" contentDisplay="TOP" focusTraversable="false" onMouseClicked="#saveNewMeal" prefHeight="400.0" prefWidth="124.0" styleClass="toolBar" stylesheets="@../../../../../../../../MEGAsync%20Downloads/Cloud%20Drive/Projects/RMI/POS%20with%20FX/src/lk/ijse/pos/style/Theme.css" text="New Meal">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="CUTLERY" size="25" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnCollection" accessibleText="MB2" contentDisplay="TOP" focusTraversable="false" layoutX="10.0" layoutY="10.0" prefHeight="400.0" prefWidth="124.0" styleClass="toolBar" text="Collection">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="MB3" contentDisplay="TOP" focusTraversable="false" layoutX="10.0" layoutY="73.0" prefHeight="400.0" prefWidth="124.0" styleClass="toolBar" text="CASHIER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="MB4" contentDisplay="TOP" focusTraversable="false" layoutX="10.0" layoutY="136.0" prefHeight="400.0" prefWidth="124.0" styleClass="toolBar" text="REPORT">
+         <graphic>
+            <FontAwesomeIconView glyphName="STICKY_NOTE" size="25" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton accessibleText="MB5" contentDisplay="TOP" focusTraversable="false" layoutX="10.0" layoutY="199.0" prefHeight="400.0" prefWidth="124.0" styleClass="toolBar" text="SETTINGS">
+         <graphic>
+            <FontAwesomeIconView glyphName="COG" size="25" textAlignment="JUSTIFY" />
+         </graphic>
+         <font>
+            <Font size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</VBox>

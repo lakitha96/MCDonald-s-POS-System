@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" prefHeight="470.0" prefWidth="800.0" styleClass="root" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.mealcollection.controller.OffersController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <JFXComboBox fx:id="cmbMealNames" editable="true" layoutX="72.0" layoutY="81.0" prefHeight="28.0" prefWidth="156.0" />
+            <JFXTextField fx:id="txtExDate" labelFloat="true" layoutX="324.0" layoutY="313.0" promptText="Offer Expiry Date" />
+            <JFXTextField fx:id="txtOffer" labelFloat="true" layoutX="569.0" layoutY="313.0" promptText="Offer" />
+            <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="100.0" layoutY="313.0" promptText="Price" />
+            <Label layoutX="56.0" layoutY="420.0" prefHeight="18.0" prefWidth="152.0" text="Latest Price with offer" />
+            <Label fx:id="lblPriceWithOffer" alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="400.0" prefHeight="18.0" prefWidth="152.0" text="Rs 440/=" textAlignment="CENTER" />
+            <ImageView fx:id="imageView" fitHeight="121.0" fitWidth="525.0" layoutX="150.0" layoutY="184.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view-for-single">
+               <viewport>
+                  <Rectangle2D height="121.0" width="619.0" />
+               </viewport>
+            </ImageView>
+            <JFXButton fx:id="btnGiveOffer" layoutX="713.0" layoutY="393.0" text="Give Offer" />
+         </children></AnchorPane>
+   </children>
+</StackPane>

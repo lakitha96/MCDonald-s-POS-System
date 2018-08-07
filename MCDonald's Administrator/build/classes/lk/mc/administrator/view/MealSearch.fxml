@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="479.0" prefWidth="991.0" styleClass="root" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.MealSearchController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <JFXTextField fx:id="txtSearchBar" layoutX="194.0" layoutY="42.0" onAction="#loadDetails" prefHeight="26.0" prefWidth="631.0" styleClass="combo-box-popup" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" />
+            <Pane fx:id="normalPane" cacheShape="false" centerShape="false" layoutX="74.0" layoutY="86.0" prefHeight="351.0" prefWidth="819.0" scaleShape="false" styleClass="root" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="128.0" fitWidth="749.0" layoutX="89.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view-for-single">
+                     <viewport>
+                        <Rectangle2D height="121.0" width="619.0" />
+                     </viewport>
+                  </ImageView>
+                  <Label fx:id="lblName" layoutX="43.0" layoutY="186.0" prefHeight="16.0" prefWidth="252.0" text="Name" />
+                  <Label fx:id="lblPrice" layoutX="43.0" layoutY="221.0" prefHeight="16.0" prefWidth="252.0" text="Price" />
+                  <Label fx:id="lblDeal" layoutX="43.0" layoutY="260.0" prefHeight="16.0" prefWidth="252.0" text="Deal" />
+                  <Label fx:id="lblDate" layoutX="43.0" layoutY="294.0" prefHeight="16.0" prefWidth="252.0" text="Date" />
+                  <Label fx:id="lblQty" alignment="CENTER" layoutX="541.0" layoutY="207.0" prefHeight="25.0" prefWidth="189.0" text="Quantity" textFill="#dd1021">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXTextField fx:id="txtEstiQty" labelFloat="true" layoutX="484.0" layoutY="284.0" promptText="Estimated Quantity" />
+                  <JFXButton fx:id="btnUpdate" layoutX="665.0" layoutY="281.0" onMouseClicked="#updateQuantity" prefHeight="32.0" prefWidth="118.0" text="Update Quantity">
+                     <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                     </styleClass>
+                  </JFXButton>
+                  <Label layoutX="579.0" layoutY="241.0" text="Estimated Quantity" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

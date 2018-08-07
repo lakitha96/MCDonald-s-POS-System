@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" prefHeight="578.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.CashierController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="459.0" prefWidth="797.0" stylesheets="@../style/Theme.css">
+         <children>
+            <JFXTextField fx:id="txtCashierName" labelFloat="true" layoutX="453.0" layoutY="300.0" promptText="CashierName" />
+            <JFXTextField fx:id="txtID" labelFloat="true" layoutX="274.0" layoutY="298.0" promptText="Cashier ID" />
+            <JFXTreeTableView layoutX="204.0" layoutY="356.0" prefHeight="145.0" prefWidth="583.0" stylesheets="@../style/Theme.css" />
+            <JFXButton fx:id="btnSave" layoutX="644.0" layoutY="299.0" onMouseClicked="#saveCashier" stylesheets="@../style/Theme.css" text="Save">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="brnUpdate" layoutX="745.0" layoutY="519.0" onMouseClicked="#updateCashier" stylesheets="@../style/Theme.css" text="Update">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <JFXButton fx:id="btnDelete" layoutX="837.0" layoutY="519.0" onMouseClicked="#deleteCashier" stylesheets="@../style/Theme.css" text="Delete">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <ImageView fx:id="imageView" fitHeight="234.0" fitWidth="603.0" layoutX="188.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/cashier.jpg" />
+               </image>
+               <viewport>
+                  <Rectangle2D height="800.0" width="2000.0" />
+               </viewport></ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

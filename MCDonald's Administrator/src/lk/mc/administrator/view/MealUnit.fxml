@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="578.0" prefWidth="991.0" styleClass="root" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.ControllMealSection">
+    <children>
+        <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@../style/Theme.css">
+            <children>
+                <JFXButton fx:id="btnCollection" accessibleText="MB2" contentDisplay="TOP" focusTraversable="false" layoutX="334.0" layoutY="25.0" onMouseClicked="#loadCollection" prefHeight="46.0" prefWidth="107.0" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" text="Collection">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                    </styleClass>
+                </JFXButton>
+                <JFXButton fx:id="btnSaveNewMeal" accessibleText="MB1" contentDisplay="TOP" focusTraversable="false" layoutX="103.0" layoutY="25.0" onMouseClicked="#saveNewMeal" prefHeight="46.0" prefWidth="107.0" stylesheets="@../style/Theme.css" text="New Meal">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                    </styleClass>
+                </JFXButton>
+                <JFXButton fx:id="btnOffers" accessibleText="MB3" contentDisplay="TOP" focusTraversable="false" layoutX="551.0" layoutY="25.0" onMouseClicked="#loadOfffers" prefHeight="46.0" prefWidth="100.0" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" text="Offers">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                    <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                    </styleClass>
+                </JFXButton>
+                <AnchorPane fx:id="seconderyPane" layoutY="98.0" prefHeight="479.0" prefWidth="991.0" />
+            <JFXButton fx:id="btnSearch" accessibleText="MB3" contentDisplay="TOP" focusTraversable="false" layoutX="774.0" layoutY="25.0" onMouseClicked="#loadSearch" prefHeight="46.0" prefWidth="100.0" stylesheets="@../../../../../../MCDonald's%20Meal%20Collection/src/lk/mc/mealcollection/style/Theme.css" text="Search">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass>
+            </JFXButton>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

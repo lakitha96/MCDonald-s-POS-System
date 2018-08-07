@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="612.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.administrator.controller.DashBoardController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="545.0" prefWidth="797.0" stylesheets="@../style/Theme.css">
+         <children>
+            <AnchorPane prefHeight="69.0" prefWidth="991.0" style="-fx-background-color: #37474F;">
+               <children>
+                  <JFXHamburger fx:id="hamburger" layoutX="26.0" layoutY="27.0" prefHeight="16.0" prefWidth="30.0" />
+                  <ImageView fitHeight="69.0" fitWidth="63.0" layoutX="433.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/MC-logo-for-other-.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="501.0" layoutY="26.0" text="Mcdonald's Restaurants" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblExit" alignment="CENTER" contentDisplay="CENTER" layoutX="947.0" layoutY="20.0" onMouseClicked="#exitFromApplication">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/red.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Exit Application" />
+                     </tooltip></Label>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="922.0" layoutY="20.0" onMouseClicked="#logout">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../assets/orange.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <tooltip>
+                        <Tooltip text="Logout" />
+                     </tooltip>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="seconderyPane" layoutY="68.0" prefHeight="578.0" prefWidth="991.0" />
+            <JFXDrawer fx:id="drawer" defaultDrawerSize="165.0" layoutY="68.0" prefHeight="578.0" prefWidth="165.0">
+               <children>
+                  <VBox fx:id="vBox" prefHeight="578.0" prefWidth="165.0" style="-fx-background-color: #37474F;" stylesheets="@../style/Theme.css">
+                     <children>
+                        <JFXButton fx:id="btnCustomer" alignment="CENTER" contentDisplay="TOP" onMouseClicked="#loadCustomer" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Customer">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="USER" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCashier" contentDisplay="TOP" onMouseClicked="#loadCashier" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Cashiers">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="MONEY" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnChefs" contentDisplay="TOP" onMouseClicked="#loadChefs" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Chefs">
+                           <graphic>
+                              <ImageView fitHeight="27.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/chef.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnTeleOperators" alignment="BOTTOM_CENTER" contentDisplay="TOP" onMouseClicked="#btnTeleOperators" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Tele Operators">
+                           <graphic>
+                              <ImageView fitHeight="39.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/customer-telephone-service.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                        <JFXButton fx:id="btnMealController" contentDisplay="TOP" onMouseClicked="#mealController" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Meal Control">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="33.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/burger-and-soda-meal(3).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="CENTER" contentDisplay="TOP" prefHeight="76.0" prefWidth="165.0" styleClass="toolBar" text="Settings">
+                           <graphic>
+                              <ImageView fitHeight="45.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../assets/settings-gears.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic></JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </JFXDrawer>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

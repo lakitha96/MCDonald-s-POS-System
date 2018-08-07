@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5501d3f6-308e-4ae2-ac13-cfca8c933b9a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="itemName" class="java.lang.String"/>
+	<parameter name="Qty" class="java.lang.String"/>
+	<parameter name="price" class="java.lang.String"/>
+	<parameter name="CustomerName" class="java.lang.String"/>
+	<parameter name="mobileNumber" class="java.lang.String"/>
+	<parameter name="OID" class="java.lang.String"/>
+	<parameter name="CashierID" class="java.lang.String"/>
+	<parameter name="Total" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="128" y="19" width="295" height="42" uuid="48404a79-c781-47d0-88ee-84ec544d9ea6"/>
+				<textElement textAlignment="Center">
+					<font size="24"/>
+				</textElement>
+				<text><![CDATA[MCdonald's Resturant]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch"/>
+	</columnHeader>
+	<detail>
+		<band height="185" splitType="Stretch">
+			<staticText>
+				<reportElement x="28" y="109" width="75" height="20" uuid="ca36c2fb-1faf-4df9-9db0-bdee600317bd"/>
+				<text><![CDATA[ItemName]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="32" y="143" width="75" height="20" uuid="fde1a4a8-44c0-42aa-8376-369d340654f0"/>
+				<textFieldExpression><![CDATA[$P{itemName}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="145" y="109" width="50" height="20" uuid="a723e1f4-9625-4247-bb8f-ece12e051798"/>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="149" y="145" width="40" height="20" uuid="c576d514-8f7b-4a22-a451-c7d2e24688a5"/>
+				<textFieldExpression><![CDATA[$P{Qty}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="10" width="100" height="20" uuid="173feae7-a6e6-4c1a-992a-7c11e18c575b"/>
+				<text><![CDATA[CustomerName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="10" width="100" height="20" uuid="0c6311c8-3ab0-4bcb-8520-c3b3e4ef8bec"/>
+				<text><![CDATA[Mobile Number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="241" y="109" width="50" height="20" uuid="8f8a0a71-a876-4968-9982-48b10865bf15"/>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="237" y="149" width="68" height="20" uuid="91f76204-ba7b-4d57-8b6b-b2865f4ee782"/>
+				<textFieldExpression><![CDATA[$P{price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="148" y="10" width="100" height="20" uuid="07c6ea78-7bc2-45e7-898f-851ca45f70ce"/>
+				<textFieldExpression><![CDATA[$P{CustomerName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="423" y="10" width="100" height="20" uuid="8f329350-19d1-4a98-ace1-eab8a4ad229c"/>
+				<textFieldExpression><![CDATA[$P{mobileNumber}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="49" width="100" height="20" uuid="d7b8fd29-aac7-44ea-b7b4-3eed7c68d858"/>
+				<textFieldExpression><![CDATA[$P{OID}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="28" y="49" width="100" height="20" uuid="1c85af2b-69e9-4713-8f60-f7e4e3b438d4"/>
+				<text><![CDATA[OrderID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="295" y="49" width="100" height="20" uuid="d636febd-073a-4c00-8ce2-95df6afa5519"/>
+				<text><![CDATA[CashierID]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="433" y="49" width="100" height="20" uuid="52ff3287-9ce0-47f8-a7fe-8fcd5959558b"/>
+				<textFieldExpression><![CDATA[$P{CashierID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<staticText>
+				<reportElement x="363" y="13" width="45" height="20" uuid="df20e7ca-3b2d-4c8b-82b2-c6c543686c0d"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="423" y="13" width="100" height="20" uuid="6ecfa680-c5e7-4218-84c1-505e034f2f65"/>
+				<textFieldExpression><![CDATA[$P{Total}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

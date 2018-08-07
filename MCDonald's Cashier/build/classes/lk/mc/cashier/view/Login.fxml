@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="469.0" prefWidth="534.0" style="-fx-background-color: #37474F;" styleClass="setup-button" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.cashier.controller.LoginController">
+   <children>
+      <JFXTextField fx:id="txtUserName" focusColor="#008975" labelFloat="true" layoutX="183.0" layoutY="228.0" prefHeight="26.0" prefWidth="207.0" promptText="user name" styleClass="login-textFields" stylesheets="@../style/Theme.css" />
+      <JFXPasswordField fx:id="password" focusColor="#008975" labelFloat="true" layoutX="183.0" layoutY="285.0" prefHeight="26.0" prefWidth="207.0" promptText="password" styleClass="login-textFields" stylesheets="@../style/Theme.css" />
+      <FontAwesomeIconView fx:id="icnUser" glyphName="USER" layoutX="136.0" layoutY="252.0" size="30" />
+      <FontAwesomeIconView fx:id="icnKey" glyphName="KEY" layoutX="133.0" layoutY="309.0" size="30" />
+      <JFXButton fx:id="btnLogin" layoutX="236.0" layoutY="353.0" onMouseClicked="#loginDetails" prefHeight="36.0" prefWidth="87.0" text="LOGIN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="login-button" />
+            <String fx:value="login-button-h" />
+         </styleClass>
+      </JFXButton>
+      <Label fx:id="lblClose" layoutX="498.0" layoutY="14.0" onMouseClicked="#closeLogin" styleClass="image-view-for-single">
+         <graphic>
+            <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true" styleClass="anyHover" x="-2.0">
+               <image>
+                  <Image url="@../assets/red.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <tooltip>
+            <Tooltip text="Exit from Login" />
+         </tooltip>
+      </Label>
+      <ImageView fitHeight="168.0" fitWidth="179.0" layoutX="196.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/MC-logo.png" />
+         </image>
+         <viewport>
+            <Rectangle2D height="500.0" width="500.0" />
+         </viewport>
+      </ImageView>
+      <Label layoutX="30.0" layoutY="17.0" text="MCdonald's |" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="18.0" text="Cashier" textFill="WHITE" />
+   </children>
+</AnchorPane>

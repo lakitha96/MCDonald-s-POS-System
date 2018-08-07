@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane fx:id="stackPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="800.0" styleClass="backgroundALL" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.mealcollection.controller.CollectionController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="470.0" prefWidth="800.0">
+         <children>
+            <JFXTreeTableView fx:id="mealTreeTable" layoutX="8.0" layoutY="52.0" prefHeight="409.0" prefWidth="258.0" style="-fx-background-color: #ffffff;" styleClass="tree-disclosure-node" stylesheets="@../style/Theme.css" />
+            <Label fx:id="lblInstruction" layoutX="456.0" layoutY="245.0" prefHeight="16.0" prefWidth="248.0" text="select meals from table to modifiy......." />
+            <Pane fx:id="normalPane" layoutX="271.0" layoutY="66.0" prefHeight="401.0" prefWidth="522.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="103.0" fitWidth="450.0" layoutX="36.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="anyHover">
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+                  <JFXTextField fx:id="txtName" labelFloat="true" layoutX="36.0" layoutY="145.0" prefHeight="26.0" prefWidth="169.0" promptText="Name of Meal" />
+                  <JFXTextField fx:id="txtPrice" labelFloat="true" layoutX="317.0" layoutY="209.0" prefHeight="26.0" prefWidth="169.0" promptText="Price" />
+                  <JFXTextField fx:id="txtCat" labelFloat="true" layoutX="36.0" layoutY="209.0" prefHeight="26.0" prefWidth="169.0" promptText="Catogery" />
+                  <JFXTextField fx:id="txtOfferDate" labelFloat="true" layoutX="36.0" layoutY="321.0" prefHeight="26.0" prefWidth="169.0" promptText="Offer Expiry Date" />
+                  <JFXTextField fx:id="txtQTY" labelFloat="true" layoutX="36.0" layoutY="259.0" prefHeight="26.0" prefWidth="169.0" promptText="Estimated Quantity" />
+                  <JFXButton fx:id="btnDelete" layoutX="411.0" layoutY="347.0" onMouseClicked="#delete" prefHeight="32.0" prefWidth="86.0" text="DELETE">
+                     <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXButton fx:id="btnEdit" layoutX="299.0" layoutY="347.0" onMouseClicked="#editDetails" prefHeight="32.0" prefWidth="86.0" text="EDIT">
+                     <styleClass>
+                        <String fx:value="login-button" />
+                        <String fx:value="login-button-h" />
+                     </styleClass>
+                  </JFXButton>
+                  <JFXTextField fx:id="txtOffer" labelFloat="true" layoutX="317.0" layoutY="259.0" prefHeight="26.0" prefWidth="169.0" promptText="Offer " />
+                  <JFXTextField fx:id="txtDes" labelFloat="true" layoutX="317.0" layoutY="145.0" prefHeight="26.0" prefWidth="169.0" promptText="Description" />
+               </children>
+            </Pane>
+            <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="14.0" layoutY="18.0" prefHeight="26.0" prefWidth="248.0" text="Search" />
+         </children></AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="265.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="autocomplete.AutoCompleteFxController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="238.0" layoutY="22.0" prefHeight="17.0" prefWidth="125.0" text="Auto Complete" textAlignment="CENTER" />
+      <JFXTextField fx:id="txtAutoComplete" layoutX="101.0" layoutY="90.0" prefHeight="25.0" prefWidth="398.0" />
+   </children>
+</AnchorPane>

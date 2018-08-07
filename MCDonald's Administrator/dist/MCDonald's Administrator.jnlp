@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MCDonald's Administrator.jnlp">
+  <information>
+    <title>MCDonald's Administrator</title>
+    <vendor>lakitha</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\MCDonald_s_Common.jar" size="37353" download="eager" />
+    <jar href="lib\controlsfx-8.40.13.jar" size="1213306" download="eager" />
+    <jar href="lib\fontawesomefx-commons-8.15.jar" size="20957" download="eager" />
+    <jar href="lib\fontawesomefx-fontawesome-4.7.0-5.jar" size="136891" download="eager" />
+    <jar href="lib\icu4j-3.4.4.jar" size="3233439" download="eager" />
+    <jar href="lib\ijse-jasper-reports-util-by-sb.jar" size="9232819" download="eager" />
+    <jar href="lib\jasypt-1.9.2-javadoc.jar" size="660679" download="eager" />
+    <jar href="lib\jasypt-1.9.2-lite.jar" size="66359" download="eager" />
+    <jar href="lib\jasypt-1.9.2-sources.jar" size="221181" download="eager" />
+    <jar href="lib\jasypt-1.9.2.jar" size="129265" download="eager" />
+    <jar href="lib\jasypt-acegisecurity-1.9.2-javadoc.jar" size="49531" download="eager" />
+    <jar href="lib\jasypt-acegisecurity-1.9.2-sources.jar" size="17153" download="eager" />
+    <jar href="lib\jasypt-acegisecurity-1.9.2.jar" size="14512" download="eager" />
+    <jar href="lib\jasypt-hibernate3-1.9.2-javadoc.jar" size="336524" download="eager" />
+    <jar href="lib\jasypt-hibernate3-1.9.2-sources.jar" size="115109" download="eager" />
+    <jar href="lib\jasypt-hibernate3-1.9.2.jar" size="82588" download="eager" />
+    <jar href="lib\jasypt-hibernate4-1.9.2-javadoc.jar" size="178359" download="eager" />
+    <jar href="lib\jasypt-hibernate4-1.9.2-sources.jar" size="60128" download="eager" />
+    <jar href="lib\jasypt-hibernate4-1.9.2.jar" size="46145" download="eager" />
+    <jar href="lib\jasypt-spring2-1.9.2-javadoc.jar" size="70425" download="eager" />
+    <jar href="lib\jasypt-spring2-1.9.2-sources.jar" size="20058" download="eager" />
+    <jar href="lib\jasypt-spring2-1.9.2.jar" size="17359" download="eager" />
+    <jar href="lib\jasypt-spring3-1.9.2-javadoc.jar" size="100484" download="eager" />
+    <jar href="lib\jasypt-spring3-1.9.2-sources.jar" size="49164" download="eager" />
+    <jar href="lib\jasypt-spring3-1.9.2.jar" size="49097" download="eager" />
+    <jar href="lib\jasypt-spring31-1.9.2-javadoc.jar" size="82664" download="eager" />
+    <jar href="lib\jasypt-spring31-1.9.2-sources.jar" size="46076" download="eager" />
+    <jar href="lib\jasypt-spring31-1.9.2.jar" size="48057" download="eager" />
+    <jar href="lib\jasypt-springsecurity2-1.9.2-javadoc.jar" size="50527" download="eager" />
+    <jar href="lib\jasypt-springsecurity2-1.9.2-sources.jar" size="17520" download="eager" />
+    <jar href="lib\jasypt-springsecurity2-1.9.2.jar" size="14986" download="eager" />
+    <jar href="lib\jasypt-springsecurity3-1.9.2-javadoc.jar" size="68051" download="eager" />
+    <jar href="lib\jasypt-springsecurity3-1.9.2-sources.jar" size="22142" download="eager" />
+    <jar href="lib\jasypt-springsecurity3-1.9.2.jar" size="20318" download="eager" />
+    <jar href="lib\jasypt-wicket13-1.9.2-javadoc.jar" size="44561" download="eager" />
+    <jar href="lib\jasypt-wicket13-1.9.2-sources.jar" size="12505" download="eager" />
+    <jar href="lib\jasypt-wicket13-1.9.2.jar" size="13739" download="eager" />
+    <jar href="lib\jasypt-wicket15-1.9.2-javadoc.jar" size="27131" download="eager" />
+    <jar href="lib\jasypt-wicket15-1.9.2-sources.jar" size="9371" download="eager" />
+    <jar href="lib\jasypt-wicket15-1.9.2.jar" size="11174" download="eager" />
+    <jar href="lib\javafx-mx.jar" size="36037" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2383838" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MCDonald's Administrator" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="lk.mc.administrator.startup.Start"  name="MCDonald's Administrator" />
+  <update check="always"/>
+</jnlp>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="stackPane" prefHeight="644.0" prefWidth="1100.0" styleClass="root" stylesheets="@../style/Theme.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.mc.cashier.controller.OrderController">
+   <children>
+      <AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="441.0" prefWidth="793.0">
+         <children>
+            <JFXTextField fx:id="txtCustomerSearch" focusTraversable="false" labelFloat="true" layoutX="466.0" layoutY="153.0" onAction="#searchCustomer" prefHeight="26.0" prefWidth="182.0" promptText="Search Customer" />
+            <Label layoutX="17.0" layoutY="125.0" text="Customer" textFill="#a19c9c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Separator layoutX="6.0" layoutY="194.0" prefHeight="25.0" prefWidth="1089.0" />
+            <JFXComboBox fx:id="cmbCustomerType" focusTraversable="false" layoutX="33.0" layoutY="153.0" prefHeight="26.0" prefWidth="138.0" />
+            <JFXComboBox fx:id="cmbFilteringCtg" focusTraversable="false" layoutX="246.0" layoutY="153.0" prefHeight="26.0" prefWidth="145.0" />
+            <JFXButton fx:id="btnMealPicker" contentDisplay="TOP" focusTraversable="false" layoutX="52.0" layoutY="249.0" onMouseClicked="#loadMealPicker" text="Meal Picker">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/burger-and-soda-meal(1).png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <Label alignment="CENTER" layoutX="72.0" layoutY="581.0" prefHeight="16.0" prefWidth="57.0" text="Total " />
+            <Label fx:id="lblTotal" alignment="CENTER" layoutX="30.0" layoutY="557.0" prefHeight="27.0" prefWidth="145.0" text="Rs 00.00/=">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font></Label>
+            <JFXButton fx:id="btnGetPaid" focusTraversable="false" layoutX="980.0" layoutY="577.0" onMouseClicked="#getPaid" prefHeight="41.0" prefWidth="80.0" stylesheets="@../style/Theme.css" text="GET PAID">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass></JFXButton>
+            <Label layoutX="21.0" layoutY="231.0" text="Meal" textFill="#a19c9c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Separator layoutX="160.0" layoutY="269.0" orientation="VERTICAL" prefHeight="26.0" prefWidth="5.0" />
+            <JFXTextField fx:id="txtSearchByItemName" focusTraversable="false" labelFloat="true" layoutX="201.0" layoutY="267.0" promptText="Search By Meal Name" />
+            <JFXTextField fx:id="txtBalance" focusTraversable="false" labelFloat="true" layoutX="405.0" layoutY="565.0" promptText="Balance" />
+            <JFXTextField fx:id="txtPaidAmount" focusTraversable="false" labelFloat="true" layoutX="211.0" layoutY="565.0" onKeyReleased="#getBalance" promptText="Payment Amount" />
+            <JFXTextField fx:id="txtQuantity" focusTraversable="false" labelFloat="true" layoutX="399.0" layoutY="267.0" onAction="#addItemOrderList" promptText="Quantity" />
+            <JFXButton fx:id="btnAddToTable" focusTraversable="false" layoutX="592.0" layoutY="266.0" onAction="#addItemOrderList" prefHeight="26.0" prefWidth="138.0" stylesheets="@../style/Theme.css" text="Add Order to List">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass>
+            </JFXButton>
+            <Label fx:id="lblTimeDate" layoutX="951.0" layoutY="25.0" text="Date 1999/12/21">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="8.0" layoutY="80.0" prefHeight="25.0" prefWidth="383.0" />
+            <JFXTextField fx:id="txtOID" focusTraversable="false" labelFloat="true" layoutX="236.0" layoutY="46.0" prefHeight="25.0" prefWidth="191.0" promptText="OrderID" />
+            <JFXComboBox fx:id="cmbCashierID" layoutX="27.0" layoutY="46.0" prefHeight="25.0" prefWidth="172.0" />
+            <Label fx:id="txtCustomerDetailsDisplay" layoutX="844.0" layoutY="116.0" prefHeight="80.0" prefWidth="214.0" />
+            <Label layoutX="17.0" layoutY="6.0" text="Cashier" textFill="#a19c9c">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <JFXTreeTableView fx:id="treeTable" layoutX="150.0" layoutY="322.0" prefHeight="211.0" prefWidth="801.0" />
+            <JFXButton fx:id="btnRemove" focusTraversable="false" layoutX="943.0" layoutY="266.0" onMouseClicked="#removeItem" prefHeight="27.0" prefWidth="77.0" stylesheets="@../style/Theme.css" text="Remove">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass>
+            </JFXButton>
+            <JFXButton fx:id="btnUpdate" focusTraversable="false" layoutX="853.0" layoutY="266.0" onMouseClicked="#updateItemQuantity" prefHeight="27.0" prefWidth="77.0" stylesheets="@../style/Theme.css" text="Update">
+               <styleClass>
+                  <String fx:value="login-button" />
+                  <String fx:value="login-button-h" />
+               </styleClass>
+            </JFXButton>
+            <Separator layoutX="798.0" layoutY="260.0" orientation="VERTICAL" prefHeight="41.0" prefWidth="6.0" />
+            <Label fx:id="txtCashier" layoutX="525.0" layoutY="13.0" prefHeight="63.0" prefWidth="214.0" />
+            <ImageView fitHeight="83.0" fitWidth="96.0" layoutX="960.0" layoutY="384.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/cart.gif" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblCart" alignment="CENTER" contentDisplay="CENTER" layoutX="1034.0" layoutY="374.0" text="0" textFill="#b52222">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
